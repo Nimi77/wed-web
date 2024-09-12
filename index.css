@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", san-serif;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+h3 {
+  font-family: "Shantell Sans", cursive;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+header {
+  background-color: white;
+  margin: 1rem 1.4rem;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* harmburger btn */
+.harmburger-btn #check,
+.toggle-btn {
+  display: none;
+}
+.checkbtn {
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+#check:checked ~ .nav-mobile {
+  display: block;
+}
+.nav-mobile {
+  display: none;
+}
+.nav-mobile {
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  background: black;
+  z-index: 1;
+  width: 200px;
+}
+.nav-mobile a {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+  text-decoration: none;
+}
+/* harmburger btn */
+
+header .nav h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  color: #151515;
+  font-family: "Shantell Sans", cursive;
+}
+header .nav button {
+  padding: 0.6rem 2rem;
+  border-radius: 3px;
+  background-color: #121212;
+  color: white;
+  outline: 0;
+  cursor: pointer;
+}
+
+.date-venue.sect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 4rem 1rem;
+}
+.date-venue.sect span {
+  justify-content: flex-end;
+}
+.date-venue.sect .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.6rem;
+}
+.date-venue.sect .left h4 {
+  padding-bottom: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+.date-venue.sect .left p {
+  font-size: 1.6rem;
+}
+.date-venue.sect .img-collage {
+  position: relative;
+}
+.img-collage img:nth-child(2) {
+  position: absolute;
+  top: 180px;
+  right: 40px;
+}
+.photos {
+  margin: 6rem 1rem;
+}
+.photos h3 {
+  padding-bottom: 12px;
+}
+.story,
+.dinner-details {
+  padding-inline: 2rem;
+}
+.two-story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  padding-top: 0.8rem;
+}
+.two-story p {
+  padding-block-end: 0.6rem;
+  line-height: 30px;
+}
+.two-story span {
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.schedule {
+  margin-block: 4rem;
+  text-align: center;
+}
+.schedule p {
+  padding-top: 0.8rem;
+  text-transform: uppercase;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1.2rem;
+  gap: 1rem;
+}
+.details .FAQ {
+  width: 50%;
+}
+.quest span {
+  font-weight: 600;
+}
+.quest p {
+  padding-bottom: 12px;
+}
+.details img {
+  width: 450px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 992px) {
+  .checkbtn {
+    display: block;
+  }
+  .nav-mobile {
+    width: 100%;
+    height: 40%;
+  }
+  .two-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
