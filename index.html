@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AR Affairs</title>
-    <link rel="stylesheet" href="./index.css">
-    </link>
+    <link rel="stylesheet" href="./index.css"></link>
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -15,9 +14,9 @@
         <div class="nav">
             <div class="harmburger-btn">
                 <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
+                <span class="checkbtn">
                     <i class="fas fa-bars"></i>
-                </label>
+                </span>
                 <div class="nav-mobile">
                     <a href="#">Home</a>
                     <a href="#schedule">Home</a>
@@ -27,56 +26,111 @@
             </div>
             <div class="toggle-btn"></div>
             <h1>A + R</h1>
-            <button>RSVP</button>
+            <button class="rsvp-btn">RSVP</button>
+            <!-- RSVP Modal  -->
+            <div id="modal" class="modal">
+                <div class="modal-container">
+                    <div class="modal-content">
+                        <div class="m-heading">
+                            <h3>Will you be joining us?</h3>
+                            <p>Please Reply by 1st of November</p>
+                        </div>
+                        <form action="" class="rsvp-form">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" class="guest-l">
+                            </div>
+                            <div>
+                                <label for="guestNo">Number of Guests</label>
+                                <input type="number" name="guestNo" class="guest-l">
+                            </div>
+                            <div class="confirmation">
+                                <h4>Would you be attending?</h4>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" name="attendance" value="accepts" />
+                                        Gladly Accepts
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="attendance" value="decline" />
+                                        Regretfully Declines
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="f-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </header>
 
     <div class="hero">
-        <img src="./Image/Couple-img.jpg" alt="couple's image">
+        <img src="./Images/Couple-img.jpg" alt="couple's image">
     </div>
 
-    <div class="date-venue sect">
-        <span>Save the date</span>
-        <div class="left">
-            <div class="date">
-                <h4>The Date</h4>
-                <p>26th December 2023</p>
+    <div class="location sect">
+        <div class="container">
+            <span class="svd">Save the date</span>
+            <div class="c-details">
+                <div class="date">
+                    <h4>The Date</h4>
+                    <p>26th December 2023</p>
+                </div>
+                <div class="venue">
+                    <h4>Ceremony</h4>
+                    <p>Mecellina Hall and Event</p>
+                </div>
             </div>
-            <div class="venue">
-                <h4>Ceremony</h4>
-                <p>Mecellina Hall and Event</p>
+            <div class="img-collage">
+                <img src="./Images/img01.png" alt="couple's Images 1" height="400px">
+                <img src="./Images/img02.png" alt="couple's image 2">
             </div>
-        </div>
-        <div class="img-collage">
-            <img src="./Image/img01.png" alt="couple's image 1" height="400px">
-            <img src="./Image/img02.png" alt="couple's image 2">
         </div>
     </div>
 
-    <div class="photos sect">
+    <div class="photos">
         <h3>Photos</h3>
-        <div class="img-collage"></div>
+        <div class="photo-collage">
+            <img src="./Images/photo1.png" alt="couple's Images 1" class="ph1">
+            <img src="./Images/photo2.png" alt="couple's Images 2" class="ph2">
+            <div class="column">
+                <img src="./Images/photo4.png" alt="couple's Images 3" class="ph3">
+                <img src="./Images/photo4.png" alt="couple's Images 4" class="ph4">
+            </div>
+        </div>
     </div>
 
     <div class="story">
-        <h3>Our Story</h3>
-        <div class="two-story">
-            <div class="first-story">
-                <p>Lorem ipsum dolor sit amet consectetur. Ut ultrices risus commodo viverra ultrices at enim rhoncus
-                    felis. Ante convallis lacus tempus at habitasse feugiat. Facilisi amet et eget aliquet urna id
-                    felis. Quis morbi adipiscing erat aliquam. In hendrerit diam blandit in tortor nullam nec vel nulla.
-                    Ante ac elementum urna pharetra sit. In pellentesque eu neque viverra ut enim platea hendrerit.
-                </p>
-                <span>-Her perspective</span>
-            </div>
-            <div class="second-story">
-                <p>Lorem ipsum dolor sit amet consectetur. Ut ultrices risus commodo viverra ultrices at enim rhoncus
-                    felis.
-                    Ante convallis lacus tempus at habitasse feugiat. Facilisi amet et eget aliquet urna id felis. Quis
-                    morbi adipiscing erat aliquam. In hendrerit diam blandit in tortor nullam nec vel nulla. Ante ac
-                    elementum urna pharetra si. In pellentesque eu neque viverra ut enim platea hendrerit.
-                </p>
-                <span>-His perspective</span>
+        <div class="container">
+            <h3>Our Story</h3>
+            <div class="couple-story">
+                <div class="her-story">
+                    <p>Lorem ipsum dolor sit amet consectetur. Ut ultrices risus commodo viverra ultrices at enim
+                        rhoncus felis. Ante convallis lacus tempus at habitasse feugiat. Facilisi amet et eget aliquet urna id
+                        felis. Quis morbi adipiscing erat aliquam. In hendrerit diam blandit in tortor nullam nec vel
+                        nulla.
+                        In pellentesque eu neque viverra ut enim platea hendrerit.</br>
+                        Consequat iaculis odio turpis proin id odio commodo. Turpis metus dolor amet ac dolor pharetra
+                        elit mattis. Massa commodo velit tincidunt scelerisque sed.
+                        Sit at risus sem enim pellentesque a mi sed. Porta.
+                    </p>
+                    <span>- Her perspective</span>
+                </div>
+                <div class="his-story">
+                    <p>Lorem ipsum dolor sit amet consectetur. Ut ultrices risus commodo viverra ultrices at enim
+                        rhoncus felis. Ante convallis lacus tempus at habitasse feugiat. Facilisi amet et eget aliquet urna id
+                        felis. Quis morbi adipiscing erat aliquam. In hendrerit diam blandit in tortor nullam nec vel
+                        nulla.
+                        In pellentesque eu neque viverra ut enim platea hendrerit.</br>
+                        Consequat iaculis odio turpis proin id odio commodo. Turpis metus dolor amet ac dolor pharetra
+                        elit mattis. Massa commodo velit tincidunt scelerisque sed.
+                        Sit at risus sem enim pellentesque a mi sed. Porta.
+                    </p>
+                    <span>- His perspective</span>
+                </div>
             </div>
         </div>
     </div>
@@ -94,7 +148,7 @@
                 <div class="FAQ" id="faq">
                     <div class="quest">
                         <span>Can I bring a date?</span>
-                        <p>Please check your inite for your +1!</p>
+                        <p>Please check your invite for your +1!</p>
                     </div>
                     <div class="quest">
                         <span>A note on kids</span>
@@ -111,24 +165,68 @@
                         <span>Gifts</span>
                         <p>
                             Your love, laughter and presence on our wedding day is the greatest
-                            of all.</br>However, if you wish to send us a gift, kindly scan the QR code on your mini card.</p>
+                            of all.</br>However, if you wish to send us a gift, kindly scan the QR code on your mini
+                            card.</p>
                     </div>
                 </div>
-                <img src="Image/dinner-img.png" alt="couple's image">
+                <img src="Images/dinner-img.png" alt="couple's image">
             </div>
         </div>
     </div>
 
     <div class="rsvp" id="rsvp">
-        <h3>RSVP</h3>
-        <p>Please reply by 1st of Novemember</p>
-        <button>RSVP Now</button>
+        <div class="container">
+            <h3>RSVP</h3>
+            <div class="c-content">
+                <p>Please reply by 1st of November</p>
+                <button class="rsvp-btn2">RSVP Now</button>
+                <!-- RSVP modal -->
+                <div id="modall" class="modal">
+                    <div class="modal-container">
+                        <div class="modal-content">
+                            <div class="m-heading">
+                                <h3>RSVP</h3>
+                                <p>Please Reply by 1st of November</p>
+                            </div>
+                            <form action="" class="rsvp-form">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="guest-l">
+                                </div>
+                                <div>
+                                    <label for="guestNo">Number of Guests</label>
+                                    <input type="number" name="guestNo" class="guest-l">
+                                </div>
+                                <div class="confirmation">
+                                    <h4>Would you be attending?</h4>
+                                    <div class="radio-group">
+                                        <label>
+                                            <input type="radio" name="attendance" value="accepts" />
+                                            Gladly Accepts
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="attendance" value="decline" />
+                                            Regretfully Declines
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="f-submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <h3>26 December 2020</h3>
-        <span>A + R</span>
+        <div class="container">
+            <h3>26 December 2020</h3>
+            <span>A + R</span>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
